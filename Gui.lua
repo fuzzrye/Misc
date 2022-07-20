@@ -2748,13 +2748,9 @@ function DiscordLib:Window(text)
 				end
 				
 				function DropFunc:Set(text)
+					print(text)
 					CurrentSelectedText.Text = text
 					pcall(callback, text)
-					Dropdown.Size = UDim2.new(0, 403, 0, 73)
-					DropdownFrameMain.Visible = false
-					DropdownFrameMainOutline.Visible = false
-					ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
-					DropTog = false
 				end
 				
 				function DropFunc:Add(textadd)
