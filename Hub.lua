@@ -7,6 +7,7 @@ local win = DiscordLib:Window("Bang Hub")
 local ProjectSlayer = win:Server("Project Slayer", "")
 
 if game.PlaceId ~= 5956785391 then
+	print(game.PlaceId)
 	local Main = ProjectSlayer:Channel("Main")
 
 	Main:Button("Teleport", function()
