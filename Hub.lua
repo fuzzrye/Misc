@@ -11,7 +11,7 @@ if game.PlaceId == 5956785391 then
 
 	Main:Button("Teleport", function()
 		TeleportService:Teleport(game.PlaceId, game.Players.LocalPlayer)
-		syn.queue_on_teleport("")
+		syn.queue_on_teleport("https://raw.githubusercontent.com/fuzzrye/Misc/main/Hub.lua")
 		DiscordLib:Notification("Notification", "Teleporting!", "Okay!")
 	end)
 else
