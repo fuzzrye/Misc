@@ -1,4 +1,9 @@
 local PlaceID = game.PlaceId
+
+if PlaceID == 5956785391 then -- Project Slayer
+    PlaceID = 6152116144
+end
+
 local AllIDs = {}
 local foundAnything = ""
 local actualHour = os.date("!*t").hour
