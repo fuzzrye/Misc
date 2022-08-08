@@ -56,7 +56,7 @@ defaults.TextScale = 1 -- If you want the frame to have a nominal count of n lin
 defaults.TextSize = 20 -- Only applicable if TextScaled = false
 
 -- TextLabel default properties
-defaults.Font = Enum.Font.FredokaOne
+defaults.Font = Enum.Font.GothamMedium
 defaults.TextColor3 = "White"
 defaults.TextStrokeColor3 = "Black"
 defaults.TextTransparency = 0
@@ -74,7 +74,7 @@ defaults.ImageRectSize = "0,0"
 -- character appearance timing:
 defaults.AnimateStepTime = 0 -- Seconds between newframes
 defaults.AnimateStepGrouping = "Letter" -- "Word" or "Letter" or "All"
-defaults.AnimateStepFrequency = 10 -- How often to step, 1 is all, 2 is step in pairs, 3 is every three, etc.
+defaults.AnimateStepFrequency = 20 -- How often to step, 1 is all, 2 is step in pairs, 3 is every three, etc.
 -- yielding:
 defaults.AnimateYield = 0 -- Set this markup to yield
 -- entrance style parameters:
@@ -750,6 +750,7 @@ end
 
 local Gui = Instance.new('ScreenGui', game.CoreGui)
 Gui.ResetOnSpawn = false
+Gui.DisplayOrder = 100
 
 local NotificationTemplate = Instance.new('TextLabel')
 NotificationTemplate.AnchorPoint = Vector2.new(0.5, 0)
